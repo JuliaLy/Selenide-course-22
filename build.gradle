@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.ulyaro'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation (
+            'org.junit.jupiter:junit-jupiter:5.9.3',
+            "com.codeborne:selenide:6.16.0",
+            "io.github.bonigarcia:webdrivermanager:5.3.3"
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
